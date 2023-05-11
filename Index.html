@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -17,6 +15,8 @@
       <li><a href="#">Meet Our Team</a></li>
       <li><a href="#">Contact Us</a></li>
       <li><a href="#">Feedback</a></li>
+      <li><a href="#">Newsletter</a></li>
+      <li><a href="#">Spotify</a></li>
     </ul>
   </nav>
   <main>
@@ -27,43 +27,45 @@
     <section id="meet-our-team">
       <h2>Meet Our Team</h2>
       <ul>
-        <li>
-          <img src="images/team-member-1.jpg" alt="Team Member 1">
-          <h3>John Doe</h3>
-          <p>John Doe is the founder and CEO of this company. He is a visionary leader with a passion for technology.</p>
+        <li><img src="images/team-member-1.jpg" alt="Team Member 1">
+          <h3>Team Member 1</h3>
+          <p>Team Member 1 is a software engineer who specializes in web development. They have been with the company for 5 years and are passionate about creating user-friendly and engaging websites.</p>
         </li>
-        <li>
-          <img src="images/team-member-2.jpg" alt="Team Member 2">
-          <h3>Jane Doe</h3>
-          <p>Jane Doe is the CTO of this company. She is a brilliant engineer with a deep understanding of technology.</p>
+        <li><img src="images/team-member-2.jpg" alt="Team Member 2">
+          <h3>Team Member 2</h3>
+          <p>Team Member 2 is a graphic designer who specializes in creating visually appealing and informative web designs. They have been with the company for 3 years and are always looking for new ways to improve the look and feel of our websites.</p>
         </li>
-        <li>
-          <img src="images/team-member-3.jpg" alt="Team Member 3">
-          <h3>Peter Smith</h3>
-          <p>Peter Smith is the COO of this company. He is a seasoned executive with a proven track record of success.</p>
+        <li><img src="images/team-member-3.jpg" alt="Team Member 3">
+          <h3>Team Member 3</h3>
+          <p>Team Member 3 is a content writer who specializes in creating engaging and informative content for our websites. They have been with the company for 2 years and are always looking for new ways to tell our stories in a way that resonates with our audience.</p>
         </li>
       </ul>
     </section>
-    <section id="copyright">
+    <footer>
       <p>Copyright &copy; 2023 My Website. All rights reserved.</p>
-    </section>
-    <section id="feedback">
-      <h2>Feedback</h2>
-      <form action="#">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="email" name="email" placeholder="Your Email">
-        <textarea name="message" placeholder="Your Feedback"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </section>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </footer>
   </main>
-  <footer>
-    <ul>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">LinkedIn</a></li>
-    </ul>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+
+  <!-- Feedback form -->
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <form action="feedback.php" method="post">
+      <input type="text" name="name" placeholder="Your name">
+      <input type="email" name="email" placeholder="Your email">
+      <textarea name="message" rows="10" cols="50" placeholder="Your message"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- Newsletter form -->
+  <section id="newsletter">
+    <h2>Newsletter</h2>
+    <p>Sign up for our newsletter to stay up-to-date on the latest news and information.</p>
+    <form action="newsletter.php" method="post">
+      <input type="email" name="email" placeholder="Your email">
+      <input type="submit" value="Subscribe">
