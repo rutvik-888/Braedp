@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UPI Payment - Clozet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f6f6f6;
+      padding: 30px;
+      text-align: center;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    .qr-img {
+      max-width: 240px;
+      margin: 15px 0;
+    }
+    .pay-btn {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .note {
+      font-size: 14px;
+      color: #555;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Pay with UPI</h2>
+    <p><strong>Order ID:</strong> CLOZET143</p>
+    <p><strong>Amount:</strong> ₹499</p>
+    <p><strong>UPI ID:</strong> rutvik@fampay</p>
+
+    <h3>📷 Scan to Pay</h3>
+    <img class="qr-img" src="https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=upi://pay?pa=rutvik@fampay&pn=Clozet&am=499&cu=INR&tn=OrderCLOZET143" alt="UPI QR Code" />
+
+    <h3>📲 Or Tap to Pay</h3>
+    <a class="pay-btn" href="upi://pay?pa=rutvik@fampay&pn=Clozet&am=499&cu=INR&tn=OrderCLOZET143">🔗 Pay ₹499 Now</a>
+
+    <p class="note">After payment, save a screenshot and share your order ID if asked.</p>
+  </div>
+</body>
+</html>
